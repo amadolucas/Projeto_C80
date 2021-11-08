@@ -42,6 +42,6 @@ function searching()
 				found=found+1;
 			}	
 		}
-	document.getElementById("p2").innerHTML="nome encontrado "+found+" time/s";
-	console.log("nome encontrado "+found+" time/s");
+	document.getElementById("p2").innerHTML="Nome encontrado "+found+" vez(es)";
+	console.log("Nome encontrado "+found+" vez(es)");
 }
