@@ -9,7 +9,7 @@ function submit()
 	console.log(GuestName);
         
     console.log(namesOfPeople);
-    var lenght_of_name = namesOfPeople.length;
+    var lenghtOfName = namesOfPeople.length;
     console.log(lenghtOfName);
 	document.getElementById("displayName").innerHTML=namesOfPeople.toString();
 	
@@ -42,6 +42,6 @@ function searching()
 				found=found+1;
 			}	
 		}
-	document.getElementById("p2").innerHTML="name found "+found+" time/s";
-	console.log("found name "+found+" time/s");
+	document.getElementById("p2").innerHTML="nome encontrado "+found+" time/s";
+	console.log("nome encontrado "+found+" time/s");
 }
