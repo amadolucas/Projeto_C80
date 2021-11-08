@@ -1,34 +1,34 @@
 
-var names_of_people = [];
+var namesOfPeople = [];
     
 function submit()
 {
     var GuestName = document.getElementById("name1").value;
-	names_of_people.push(GuestName);
+	namesOfPeople.push(GuestName);
 
 	console.log(GuestName);
         
-    console.log(names_of_people);
-    var lenght_of_name = names_of_people.length;
-    console.log(lenght_of_name);
-	document.getElementById("display_name").innerHTML=names_of_people.toString();
+    console.log(namesOfPeople);
+    var lenght_of_name = namesOfPeople.length;
+    console.log(lenghtOfName);
+	document.getElementById("displayName").innerHTML=namesOfPeople.toString();
 	
    }
 
 function sorting()
 {
-	names_of_people.sort();
-	var i= names_of_people.join("<br>");
-    console.log(names_of_people);		
+	namesOfPeople.sort();
+	var i= namesOfPeople.join("<br>");
+    console.log(namesOfPeople);		
 	document.getElementById("sorted").innerHTML=i.toString();
 	}
 
 function show()
 {
-	var i= names_of_people.join("<br>");
-	console.log(names_of_people);
+	var i= namesOfPeople.join("<br>");
+	console.log(namesOfPeople);
 	document.getElementById("p1").innerHTML=i.toString();
-	document.getElementById("sort_button").style.display="block";
+	document.getElementById("sortButton").style.display="block";
 	}
 
 function searching()
@@ -36,9 +36,9 @@ function searching()
 	var s= document.getElementById("s1").value;
 	var found=0;
 	var j;
-	for(j=0; j<names_of_people.length; j++)
+	for(j=0; j<namesOfPeople.length; j++)
 		{
-			if(s==names_of_people[j]){
+			if(s==namesOfPeople[j]){
 				found=found+1;
 			}	
 		}
